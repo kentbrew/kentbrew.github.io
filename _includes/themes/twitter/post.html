@@ -1,14 +1,15 @@
 <div class="page-header">
-  <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
+  <h1>{{ page.title }}</h1>
+  {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}
 </div>
 
 <div class="row-fluid post-full">
   <div class="span12">
-    <div class="date">
-      <span>{{ page.date | date_to_long_string }}</span>
-    </div>
     <div class="content">
       {{ content }}
+    </div>
+    <div class="date">
+      <span>{{ page.date | date_to_long_string }}</span>
     </div>
 
   {% unless page.categories == empty %}
@@ -47,3 +48,18 @@
     {% include JB/comments %}
   </div>
 </div>
+
+<script>
+(function(w, d){
+  var a = d.getElementsByTagName('A');
+  for (var i = 0, n = a.length; i < n; i = i + 1) {
+    if (a[i].href && a[i].className && a[i].className === 'tipMeOnReddit') {
+      a[i].href = a[i].href.replace(/Tip/, 'Tip for ' + encodeURIComponent(d.URL));
+      a[i].onclick = function () {
+        w.open(this.href, '_tipme', 'width=550,height=500');
+        return false;
+      };
+    }
+  }
+}(window, document)); 
+</script>
