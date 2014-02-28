@@ -1,0 +1,47 @@
+/*  css reset -- thank you Eric Meyer:  http://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, b, address, cite, code, em, img, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, footer, header, nav, section, summary { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+/*  fix padding -- thank you Paul Irish:  http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+* { box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; }
+
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 120%;
+  font-size: 16px;
+  text-align: center;
+  background: #565050;
+}
+
+a {
+  color: #a94834;
+  text-decoration: none;
+}
+
+div.main {
+  width: 720px;
+  text-align: left;
+  margin: 0 auto;
+  background: #eee;
+}
+
+div.hero {
+  color: #ffa;
+  height: 200px;
+}
+
+div.hero h1 {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 200px;
+}
+
+h2 {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+}
