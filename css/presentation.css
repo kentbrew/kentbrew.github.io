@@ -28,7 +28,8 @@ div.main {
 }
 
 div.hero {
-  color: #ffa;
+  color: #555;
+  text-align: center;
   height: 200px;
 }
 
