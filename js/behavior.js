@@ -11,7 +11,7 @@ xhr.onreadystatechange = function() {
         var li = d.createElement('LI');
         var p = d.createElement('P');
         p.innerHTML = r.body;
-        li.appendChild(li);
+        li.appendChild(p);
         c.appendChild(li);
       }
     }
