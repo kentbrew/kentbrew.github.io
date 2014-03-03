@@ -10,7 +10,7 @@ xhr.onreadystatechange = function() {
       for (var i = r.length - 1; i > -1; i = i - 1) {
         var li = d.createElement('LI');
         var p = d.createElement('P');
-        p.innerHTML = r.body;
+        p.innerHTML = r[i].body;
         li.appendChild(p);
         c.appendChild(li);
       }
