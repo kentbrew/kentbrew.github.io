@@ -12,8 +12,6 @@ xhr.onreadystatechange = function() {
         var img = d.createElement('IMG');
         var u = r[i].user;
         img.src = u.avatar_url;
-        img.height = '32';
-        img.width = '32';
         li.appendChild(img);
         var a = d.createElement('A');
         a.innerHTML = u.login;
