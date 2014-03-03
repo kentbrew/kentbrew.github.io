@@ -20,7 +20,7 @@ xhr.onreadystatechange = function() {
         a.href = u.html_url;
         li.appendChild(a);
         var date = d.createElement('DATE');
-        date.innerHTML = r[i].created_date.replace(/T/, ' ').replace(/Z/, ' ');
+        date.innerHTML = r[i].created_date;
         li.appendChild(date);
         var p = d.createElement('P');
         p.innerHTML = r[i].body;
